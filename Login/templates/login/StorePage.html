@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<link rel='stylesheet' type="text/css" href={% static 'login/store.css'%} >
+
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="maindiv">
+
+     {% for row in list %}
+    <div class="storewidth">
+        <img src="../../static/login/image/store.jpg"class="imgwidth">
+        <h3>{{ row.store_name }}</h3>
+
+ {{ valid.email }}
+
+         <h3>{{ row.rating }}</h3>
+         <h3>{{ row.review}}</h3>
+         <h3>{{ row.date}}</h3>
+         <h3>{{ row.totalproduct}}</h3>
+    </divclass>
+     {% endfor %}
+</div>
+
+</div>
+</body>
+</html>

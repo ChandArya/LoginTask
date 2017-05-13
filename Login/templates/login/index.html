@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<link rel='stylesheet' type="text/css" href={% static 'login/style.css'%} >
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <script type="text/javascript"src="{% static 'login/login.js' %}  ">
+    </script>
+</head>
+<body>
+    <div class="maindiv">
+        <div class ="firsthalf">
+            <div>
+                <img class="imglogo"src='../../static/login/image/not.jpg'/>
+            </div>
+        </div>
+        <div class="secondhalf">
+            <div class="logodiv">
+                <h7 class="mainheading">Savegenie.mu</h7>
+            </div>
+            <div class="sinupdiv">
+{#                <input type="button" onclick="return titleChe()">#}
+                <form action='{% url 'store' %}' method="post" onsubmit=" return formValid()"name="login">
+                    {% csrf_token %}
+                           <select name="head" class="inputbox8">
+                               <option value="0">Title</option>
+                               <option value="1">Mr</option>
+                               <option value="2">Mrs</option>
+                           </select>
+                    <input class="inputbox2"type="text" name="firstname"placeholder="First name">
+                    <input class="inputbox1"type="text"name="lastname"placeholder="Last name">
+                    <input class="inputbox3"type="email"name="email"placeholder="Email">
+                    <input class="inputbox4"type="password"name="pass"placeholder="Password">
+                    <input class="inputbox5"type="password"name="repass"placeholder="Re password">
+                    <input class="inputbox6"type="text"name="mobile"placeholder="mobile">
+                        <input class="inputbox7"type="submit"value="Sinup">
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% block body %}
+{% endblock %}
+</body>
+</html>

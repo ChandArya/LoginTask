@@ -1,0 +1,13 @@
+.maindiv
+{
+    position: absolute;width:100%;top: 0px;left:0px;right: 100px;background-color: gray;
+}
+.storewidth{
+     position: absolute;height:200px;width:350px;
+}
+.imgwidth{
+    position: absolute;height: 60px;width: 120px;padding: 10px;
+}
+h3{
+    position: relative;height: 4px;width: 300px;left: 145px;
+}

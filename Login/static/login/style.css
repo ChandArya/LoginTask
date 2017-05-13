@@ -1,0 +1,53 @@
+body{
+    background-color: red;
+}
+.maindiv
+{
+    position: absolute;height:650px;width:1350px;top: 0px;left: 0px;
+}
+.firsthalf{
+    position: absolute;height: 650px;width: 675px;top: 0px;left: 0px;
+}
+.secondhalf{
+    position: relative;height: 650px;  width:675px;top: 0;
+    left: 675px;
+}
+.imglogo{
+    position: absolute;height: 400px;width:250px;top: 100px;left: 150px;right: 50px;
+}
+.sinupdiv{
+position: absolute;height: 200px;width: 400px;top: 300px;left: 100px;
+}.logodiv{
+position: absolute;height: 200px;width: 400px;left: 100px;top: 100px;
+}
+ .mainheading{
+     font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;font-size: 50px;
+ }
+.inputbox1
+{
+    position: absolute;height: 20px;width: 120px;left: 220px;
+}.inputbox2
+{
+    position: absolute;height: 20px;width: 120px;left: 80px;
+}.inputbox3
+{
+    position: absolute;height: 20px;width: 340px;top: 30px;
+}.inputbox4
+{
+    position: absolute;height: 20px;width: 340px;top: 60px;
+}.inputbox5
+{
+    position: absolute;height: 20px;width: 340px;top: 90px;
+}
+ .inputbox6
+{
+    position: absolute;height: 20px;width: 340px;top: 120px;
+}
+.inputbox7
+{
+    position: absolute;height: 40px;width: 340px;top: 150px;
+}
+.inputbox8
+{
+    position: absolute;height: 25px;width: 60px;
+}
